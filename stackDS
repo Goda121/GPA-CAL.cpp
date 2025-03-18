@@ -1,0 +1,33 @@
+#include<iostream>
+#include<math.h>
+#include<vector>
+using namespace std;
+const int size=100;
+class stack{
+private:
+int top,item[size];
+public:
+stack():top(-1){}
+void push(int T){
+if(top>stack-1)
+{cout<<"stack is full"<endl;}
+else{top++;
+item[top]=T;
+}
+}
+void track(){
+for(int i=top;i>=0;i--){
+cout<<item[i]<<endl;
+}
+}
+};
+int main(){
+stack o;
+o.push(6);
+o.push(3);
+o.push(9);
+o.track();
+
+
+return 0;
+}
