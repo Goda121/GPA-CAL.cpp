@@ -9,8 +9,8 @@ int top,item[size];
 public:
 stack():top(-1){}
 void push(int T){
-if(top>stack-1)
-{cout<<"stack is full"<endl;}
+if(top>size-1)
+{cout<<"stack is full"<<endl;}
 else{top++;
 item[top]=T;
 }
